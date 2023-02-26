@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="img"></div>
+    <form action="" class="form">
+        <h2>Sepal Length(cm)</h2>
+        <input type="number" step="any" name="sepal_length" id="sepal_length">
+        <h2>Sepal Width(cm)</h2>
+        <input type="number" step="any" name="sepal_width" id="sepal_width">
+        <h2>Petal Length(cm)</h2>
+        <input type="number" step="any" name="petal_length" id="petal_length">
+        <h2>Petal Width(cm)</h2>
+        <input type="number" step="any" name="petal_width" id="petal_width">
+        <br>
+        <br>
+        <button class="submit" onclick="onClickPredict()" type="button">Predict</button>
+        <br>
+	    <div id="prediction" class="result">	<h2></h2> </div>
+    </form>
+</body>
+</html>
